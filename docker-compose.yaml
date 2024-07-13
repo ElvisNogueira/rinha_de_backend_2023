@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  postgres:
+    container_name: 'postgres_rinha_de_backend_2023'
+    image: 'postgres:latest'
+    environment:
+      - POSTGRES_DB=rinha_backend_2023
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_USER=admin
+    ports:
+      - 5432:5432
