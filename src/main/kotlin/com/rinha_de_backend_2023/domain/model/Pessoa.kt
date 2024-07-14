@@ -10,9 +10,9 @@ import java.util.*
 data class Pessoa(
   @Id
   @GeneratedValue(strategy = GenerationType.UUID)
-  private val id: UUID,
+  private val id: UUID?,
   private val apelido: String,
   private val nome: String,
   private val nascimento: String,
-  private val stack: Set<String>,
+  private val stack: Set<String>?,
 )
